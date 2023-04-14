@@ -1,0 +1,43 @@
+public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
+{
+if (pInfo[playerid][pAdmin] >= 1)
+SetPlayerPos(playerid, fX, fY, fZ);
+return 1;
+}
+
+
+
+
+if (pInfo[playerid][pAdmin] < 0) return SendClientMessage(playerid, COLOR_RED, "[Ошибка] Вы не администратор!"); // проверка на админа, стерите если не нужна
+
+
+
+
+	SPD(playerid, 0, DIALOG_STYLE_MSGBOX, "Èíôîðìàöèÿ î {FF0000}Trinity RPG", !"\n\
+    {FFFF00}Äîáðî ïîæàëîâàòü íà {FF0000}Trinity RPG\n\
+	\n\
+	\n\
+	{FFFF00} Ñîçäàòåëè äàííîãî ñåðâåðà: {FF0000}Riverya4life\n\
+	{FFFF00} Ñåðâåð äëÿ ðàçâëå÷åíèÿ, òàê æå òåñòà ÷èòîâ â îïðåäåë¸ííûõ ìåñòàõ\n\
+	\n\
+	\n\
+    {FFA500}Ïðèÿòíîé èãðû íà Trinity RPG", !"Çàêðûòü", !"");
+
+
+
+CMD:givegun(playerid, params[])
+{
+	if(sscanf(params, "ddd",params[0],params[1],params[2])) return SendClientMessage(playerid, COLOR_GREY, "Введите: /givegun [Ид] [Ид оружия] [Патроны]");
+	if(!IsPlayerConnected(params[0])) return true;
+	if(params[2] < 1 || params[2] > 1000) return SendClientMessage(playerid, COLOR_GREY, "Нельзя меньше 1 или больше 999 патронов!");
+	if(params[1] < 1 || params[1] > 46) return SendClientMessage(playerid, COLOR_GREY, "ID оружия от 1 до 46!");
+	switch(params[1])
+	{
+		case 45: return SendClientMessage(playerid, COLOR_GREY, "Запрещенное оружие!");
+	}
+	new stringer1[128];
+	GivePlayerWeapon(params[0],params[1],params[2]);
+	SendClientMessage(playerid, COLOR_GREY, "[SERVER] Оружие выдано");
+	format(stringer1, sizeof(stringer1), "Администратор %s выдал Вам оружие!", pInfo[playerid][pName]);
+	return true;
+}

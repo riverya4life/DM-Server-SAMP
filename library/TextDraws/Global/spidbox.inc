@@ -1,0 +1,43 @@
+	Textdraw[0] = TextDrawCreate(419.000000, 398.000000, "usebox");
+	TextDrawLetterSize(Textdraw[0], 0.000000, 3.772634);
+	TextDrawTextSize(Textdraw[0], 199.333343, 0.000000);
+	TextDrawAlignment(Textdraw[0], 1);
+	TextDrawColor(Textdraw[0], 0);
+	TextDrawUseBox(Textdraw[0], true);
+	TextDrawBoxColor(Textdraw[0], 102);
+	TextDrawSetShadow(Textdraw[0], 0);
+	TextDrawSetOutline(Textdraw[0], 0);
+	TextDrawFont(Textdraw[0], 0);
+
+	Textdraw[1] = TextDrawCreate(202.333389, 398.000000, "usebox");
+	TextDrawLetterSize(Textdraw[1], 0.000000, 3.789505);
+	TextDrawTextSize(Textdraw[1], 203.333389, 0.000000);
+	TextDrawAlignment(Textdraw[1], 1);
+	TextDrawColor(Textdraw[1], 0);
+	TextDrawUseBox(Textdraw[1], true);
+	TextDrawBoxColor(Textdraw[1], 102);
+	TextDrawSetShadow(Textdraw[1], 0);
+	TextDrawSetOutline(Textdraw[1], 0);
+	TextDrawFont(Textdraw[1], 0);
+
+	Textdraw[2] = TextDrawCreate(357.000000, 398.000000, "usebox");
+	TextDrawLetterSize(Textdraw[2], 0.000000, 3.789505);
+	TextDrawTextSize(Textdraw[2], 358.000000, 0.000000);
+	TextDrawAlignment(Textdraw[2], 1);
+	TextDrawColor(Textdraw[2], 0);
+	TextDrawUseBox(Textdraw[2], true);
+	TextDrawBoxColor(Textdraw[2], 102);
+	TextDrawSetShadow(Textdraw[2], 0);
+	TextDrawSetOutline(Textdraw[2], 0);
+	TextDrawFont(Textdraw[2], 0);
+
+	Textdraw[3] = TextDrawCreate(415.666717, 397.585113, "usebox");
+	TextDrawLetterSize(Textdraw[3], 0.000000, 3.789505);
+	TextDrawTextSize(Textdraw[3], 416.666717, 0.000000);
+	TextDrawAlignment(Textdraw[3], 1);
+	TextDrawColor(Textdraw[3], 0);
+	TextDrawUseBox(Textdraw[3], true);
+	TextDrawBoxColor(Textdraw[3], 102);
+	TextDrawSetShadow(Textdraw[3], 0);
+	TextDrawSetOutline(Textdraw[3], 0);
+	TextDrawFont(Textdraw[3], 0);
